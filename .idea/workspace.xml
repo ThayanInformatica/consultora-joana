@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b09e2f44-ddee-41fc-b92d-748948232527" name="Default Changelist" comment="" />
+    <list default="true" id="b09e2f44-ddee-41fc-b92d-748948232527" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/consultora-joana/Arquivos SQL/ImagemDeProduto.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultora-joana/Arquivos SQL/Produto.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultora-joana/Controller/AnuncioDeProdutoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultora-joana/Domain/AnuncioDeProduto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultora-joana/Domain/ImagemDeAnuncio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultora-joana/Repository/AnuncioDeProdutoRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultora-joana/Repository/ImagemDeAnuncioRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultora-joana/funcs/UtilImg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consultora-joana/Arquivos SQL/Usuario.sql" beforeDir="false" afterPath="$PROJECT_DIR$/consultora-joana/Arquivos SQL/Usuario.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consultora-joana/Controller/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/consultora-joana/Controller/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consultora-joana/Domain/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/consultora-joana/Domain/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consultora-joana/Repository/UsuarioRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/consultora-joana/Repository/UsuarioRepository.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,43 +30,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consultora-joana/Controller/UsuarioController.php">
+        <entry file="file://$PROJECT_DIR$/consultora-joana/Controller/AnuncioDeProdutoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="114">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../projeto/logout.php">
+        <entry file="file://$PROJECT_DIR$/private/administrador/produto/produto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consultora-joana/Repository/UsuarioRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index/index.php">
+        <entry file="file://$PROJECT_DIR$/private/administrador/produto/cadastro-produto.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -61,38 +57,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/consultora-joana/Arquivos SQL/Usuario.sql">
+        <entry file="file://$PROJECT_DIR$/consultora-joana/Domain/ImagemDeAnuncio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="293">
+              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../projeto/index.php">
+        <entry file="file://$PROJECT_DIR$/consultora-joana/Repository/ImagemDeAnuncioRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="250">
+              <caret line="21" column="78" lean-forward="true" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../index.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../projeto/classes/UsuarioDAO.class.php">
+        <entry file="file://$PROJECT_DIR$/consultora-joana/funcs/UtilImg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="119" selection-start-line="119" selection-end-line="120" selection-end-column="5" />
+            <state relative-caret-position="51">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -103,20 +89,42 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ajax</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/consultora-joana/Domain/Usuario.php" />
         <option value="$PROJECT_DIR$/consultora-joana/pdoConnection/PdoCon.php" />
-        <option value="$PROJECT_DIR$/consultora-joana/Repository/UsuarioRepository.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index/index.php" />
         <option value="$PROJECT_DIR$/consultora-joana/Controller/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/consultora-joana/Repository/UsuarioRepository.php" />
+        <option value="$PROJECT_DIR$/consultora-joana/Domain/AnuncioDeProduto.php" />
+        <option value="$PROJECT_DIR$/produto/produto.js" />
+        <option value="$PROJECT_DIR$/produto/cadastro-produto.php" />
+        <option value="$PROJECT_DIR$/consultora-joana/Domain/Usuario.php" />
+        <option value="$PROJECT_DIR$/consultora-joana/Controller/CadastroDeProdutoController.php" />
+        <option value="$PROJECT_DIR$/consultora-joana/Arquivos SQL/Produto.sql" />
+        <option value="$PROJECT_DIR$/consultora-joana/Repository/AnuncioDeProdutoRepository.php" />
         <option value="$PROJECT_DIR$/consultora-joana/Arquivos SQL/Usuario.sql" />
+        <option value="$PROJECT_DIR$/consultora-joana/Arquivos SQL/ImagemDeProduto.sql" />
+        <option value="$PROJECT_DIR$/consultora-joana/funcs/UtilImg.php" />
+        <option value="$PROJECT_DIR$/private/administrador/produto/produto.js" />
+        <option value="$PROJECT_DIR$/private/administrador/produto/cadastro-produto.php" />
+        <option value="$PROJECT_DIR$/consultora-joana/Controller/AnuncioDeProdutoController.php" />
+        <option value="$PROJECT_DIR$/consultora-joana/Repository/ImagemDeAnuncioRepository.php" />
+        <option value="$PROJECT_DIR$/consultora-joana/Domain/ImagemDeAnuncio.php" />
       </list>
     </option>
   </component>
@@ -125,14 +133,14 @@
     <servers>
       <server host="localhost" id="aed6fdb3-74ed-42ae-be37-55de8cb72ecd" name="localhost" use_path_mappings="true">
         <path_mappings>
-          <mapping local-root="$PROJECT_DIR$" remote-root="C:/xampp/htdocs/consultorajoana" />
+          <mapping local-root="$PROJECT_DIR$" remote-root="C:/xampp/htdocs/consultora-joana" />
         </path_mappings>
       </server>
     </servers>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="60" />
+    <option name="y" value="17" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -141,66 +149,100 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="consultorajoana" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultorajoana" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="consultorajoana" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultorajoana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
               <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="consultorajoana" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultorajoana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="Arquivos SQL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="consultorajoana" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultorajoana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="consultorajoana" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultorajoana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="Domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="consultorajoana" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultorajoana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
+              <item name="funcs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="pdoConnection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="consultorajoana" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultorajoana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="consultorajoana" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consultorajoana" type="462c0819:PsiDirectoryNode" />
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="administrador" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="consultora-joana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="consultora-joana" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+              <item name="administrador" type="462c0819:PsiDirectoryNode" />
+              <item name="produto" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/consultora-joana/Domain" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\consultora-joana\consultora-joana\Domain" />
+      <recent name="C:\xampp\htdocs\consultora-joana\consultora-joana\Repository" />
+      <recent name="C:\xampp\htdocs\consultora-joana\consultora-joana\Arquivos SQL" />
+      <recent name="C:\xampp\htdocs\consultora-joana\consultora-joana\Controller" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -226,23 +268,28 @@
       <updated>1560734968953</updated>
       <workItem from="1560734970144" duration="2733000" />
       <workItem from="1560743017781" duration="3687000" />
+      <workItem from="1560746773389" duration="443000" />
+      <workItem from="1560810941928" duration="25000" />
+      <workItem from="1560811939192" duration="1548000" />
+      <workItem from="1560825917335" duration="3040000" />
+      <workItem from="1560912452875" duration="7853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6420000" />
+    <option name="totallyTimeSpent" value="19329000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="48" y="14" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2716418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" visible="true" weight="0.39943343" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" visible="true" weight="0.398773" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -264,19 +311,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/consultora-joana/Repository/UsuarioRepository.php</url>
-          <line>8</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/consultora-joana/Controller/UsuarioController.php</url>
           <line>14</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/consultora-joana/Controller/UsuarioController.php</url>
-          <line>54</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/consultora-joana/Controller/AnuncioDeProdutoController.php</url>
+          <line>6</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/consultora-joana/Controller/AnuncioDeProdutoController.php</url>
+          <line>74</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -289,13 +336,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consultora-joana/Repository/CadastroUsuarioRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Repository/CadastroUsuarioRepository.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/PDO/PDO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
@@ -317,51 +358,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consultora-joana/Domain/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultora-joana/pdoConnection/PdoCon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultora-joana/Controller/CadastroController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consultora-joana/Repository/UsuarioRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../projeto/classes/UsuarioDAO.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="119" selection-start-line="119" selection-end-line="120" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Controller/CadastroController.php" />
     <entry file="file://$PROJECT_DIR$/../projeto/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -372,19 +369,93 @@
     <entry file="file://$PROJECT_DIR$/../projeto/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../projeto/classes/UsuarioDAO.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="119" selection-start-line="119" selection-end-line="120" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/pdoConnection/PdoCon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produto/produto.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Domain/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produto/produto.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produto/cadastro-produto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Arquivos SQL/Usuario.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Repository/UsuarioRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Arquivos SQL/Produto.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Domain/AnuncioDeProduto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consultora-joana/Controller/UsuarioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Arquivos SQL/ImagemDeProduto.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -395,10 +466,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consultora-joana/Arquivos SQL/Usuario.sql">
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Repository/AnuncioDeProdutoRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/funcs/UtilImg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/administrador/produto/produto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/administrador/produto/cadastro-produto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Repository/ImagemDeAnuncioRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="21" column="78" lean-forward="true" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Controller/AnuncioDeProdutoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consultora-joana/Domain/ImagemDeAnuncio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
         </state>
       </provider>
     </entry>

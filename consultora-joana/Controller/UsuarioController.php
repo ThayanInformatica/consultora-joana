@@ -1,6 +1,6 @@
 <?php
-	 require __DIR__ .'/../repository/UsuarioRepository.php';
-	 require __DIR__ .'/../domain/Usuario.php';
+	 require_once __DIR__ .'/../repository/UsuarioRepository.php';
+	 require_once __DIR__ .'/../domain/Usuario.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['method'] == 'Login') {
     $login = $_POST['method'];

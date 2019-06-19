@@ -1,5 +1,5 @@
 <?php
-	require __DIR__ .'/../pdoConnection/PdoCon.php';
+	require_once __DIR__ .'/../pdoConnection/PdoCon.php';
 	
 	class UsuarioRepository{
 		private $pdoCon;

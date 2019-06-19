@@ -1,9 +1,9 @@
 <?php
-	class Usuario{
+	class Usuario {
+
 		private $id_usuario;
 		private $login;
         private $senha;
-
 
 		public function getId_usuario(){
 			return $this->id_programa;
