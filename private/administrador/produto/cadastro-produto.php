@@ -7,7 +7,7 @@ session_start();
 <head>
     <head>
         <title>
-            Consultora Joana
+            Cadastro de Produto
         </title>
         <meta charset="utf-8">
 
