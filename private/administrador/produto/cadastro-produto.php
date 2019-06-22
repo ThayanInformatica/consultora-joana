@@ -10,7 +10,8 @@ session_start();
             Cadastro de Produto
         </title>
         <meta charset="utf-8">
-
+        <link href="produto.css"
+              rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
               crossorigin="anonymous">
@@ -19,7 +20,22 @@ session_start();
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="produto.js"></script>
+
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#blah')
+                            .attr('src', e.target.result)
+                            .width(180)
+                            .height(auto);
+                    };
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
     </head>
 <body>
 
@@ -37,10 +53,18 @@ session_start();
     <br>
     <br>
 
-    <div class="form-group">
-        <label>Imagem</label>
-        <input class="form-control" type="file" name="foto"/>
+    <div class="row">
+        <label for="nome">Selecionar Logo</label>
+        <div class="col-md-2">
+            <a href="#" class="thumbnail">
+                <img src="../../../imagens/produto/padrao.jpg" height="150" width="150" id="foto-cliente">
+            </a>
+        </div>
+        <div class="form-group">
+            <input type="file" name="foto" id="foto" value="foto"  onchange="loadFoto()">
+        </div>
     </div>
+
     <a>
         <button id="salvar" class="btn btn-primary" type="submit" data-loading-text="Salvando...">
             Cadastrar
@@ -49,5 +73,8 @@ session_start();
 </form>
 
 </body>
+
+<script type="text/javascript" src="produto.js"></script>
+
 </html>
 
