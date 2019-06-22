@@ -1,6 +1,7 @@
 <?php
 	 require_once __DIR__ .'/../repository/UsuarioRepository.php';
 	 require_once __DIR__ .'/../domain/Usuario.php';
+    require_once __DIR__ .'/../domain/Endereco.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['method'] == 'Login') {
     $login = $_POST['method'];
@@ -82,8 +83,48 @@ class UsuarioController
 
         $metodo = null;
 
-        $usuario = new Usuario();
+        $pegarUsuario = new UsuarioController();
+
         $usuarioRepository = new UsuarioRepository();
+
+        $usuario = $pegarUsuario->Usuario();
+
+        $endereco = $pegarUsuario->Endereco();
+
+        if ($usuario->getSenha() == $usuario->getRepeteSenha()) {
+            if (strcmp($metodo, 'cadastrar')) {
+
+              $cpfok =  $usuarioRepository->ValidarCpf($usuario);
+
+                if($cpfok == true ){
+                 $id = $usuarioRepository->CadastrarUsuario($usuario);
+
+                if (!empty($endereco->getCep())) {
+                    $endereco->setId_usuario($id);
+                    $usuarioRepository->salvarEndereco($endereco);
+                }
+                }
+
+                if($cpfok == true ){
+                    header('Location: ../../index.php');
+                }
+
+            }
+        }
+
+        if($cpfok == false){
+            header('Location: ../../cadastro-usuario/cadastrar.php?erro=cpfinvalido');
+        }
+
+        if ($usuario->getSenha() !== $usuario->getRepeteSenha()) {
+            header('Location: ../../cadastro-usuario/cadastrar.php?erro=senha-diferentes');
+        }
+
+    }
+
+    public function Usuario(){
+
+        $usuario = new Usuario();
 
         $usuario->setLogin($_POST['login']);
         $usuario->setNome($_POST['nome']);
@@ -91,24 +132,29 @@ class UsuarioController
         $usuario->setRepeteSenha($_POST['repetiSenha']);
         $usuario->setCpf($_POST['cpf']);
         $usuario->setEmail($_POST['email']);
-        $usuario->setCep($_POST['cep']);
 
-        if($usuario->getSenha() == $usuario->getRepeteSenha()){
-            if (strcmp($metodo, 'cadastrar')) {
-
-                $usuarioRepository->CadastrarUsuario($usuario);
-
-                header('Location: ../../index.php');
-
+                return $usuario;
             }
-        }
 
-        if($usuario->getSenha() !== $usuario->getRepeteSenha()){
-            header('Location: ../../cadastro-usuario/cadastrar.php?erro=senha-diferentes');
-        }
+    public function Endereco(){
 
+        $endereco = new Endereco();
 
+        $endereco->setcep($_POST['cep']);
+        $endereco->setrua($_POST['rua']);
+        $endereco->setbairro($_POST['bairro']);
+        $endereco->setcidade($_POST['cidade']);
+        $endereco->setcomplementacao($_POST['complemento']);
+        $endereco->setnumero($_POST['numero']);
+        $endereco->setuf($_POST['uf']);
+
+        return $endereco;
     }
+
+
+
+
 }
+
 
 ?>

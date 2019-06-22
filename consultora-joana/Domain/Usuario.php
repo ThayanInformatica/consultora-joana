@@ -8,7 +8,6 @@
         private $repeteSenha;
         private $cpf;
         private $email;
-        private $cep;
 
 		public function getId_usuario(){
 			return $this->id_programa;

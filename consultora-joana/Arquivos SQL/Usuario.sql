@@ -4,6 +4,5 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
 		`nome` varchar (100) NOT NULL,
 		`senha` TEXT NOT NULL,
 		`cpf` VARCHAR(15) NOT null ,
-		`email`VARCHAR(100) NOT NULL ,
-		`cep` varchar (30) NOT NULL
+		`email`VARCHAR(100) NOT NULL
 );
