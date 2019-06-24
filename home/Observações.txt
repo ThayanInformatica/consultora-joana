@@ -1,0 +1,13 @@
+1- Logo temporaria ate a criação de uma nova.
+
+2- Imagens do slider tambem são temporarias.
+
+3- Modal de cadastro localizado no icone de usuario na barra de navegação (canto superior direito).
+
+4- Cores do sistema, ainda estão sendo escolhidas por isso podem mudar.
+
+5- Site ainda não está responsivo. 
+
+6- Caso tenha alguma sugestão, me avise :D (Jhuan)
+
+(Data da anotação: 24/06/2019)
