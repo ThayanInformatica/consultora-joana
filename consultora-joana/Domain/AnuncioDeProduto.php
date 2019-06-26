@@ -4,6 +4,7 @@ class AnuncioDeProduto
 {
 
     private $id_produto;
+    private $id_sub_categoria;
     private $nome_produto;
     private $desc_produto;
 
@@ -16,6 +17,17 @@ class AnuncioDeProduto
     {
         settype($id_produto, "int");
         $this->id_produto = $id_produto;
+    }
+
+    public function getIdSubCategoria()
+    {
+        return $this->id_sub_categoria;
+    }
+
+    public function setIdSubCategoria($id_sub_categoria)
+    {
+        settype($id_sub_categoria, "int");
+        $this->id_sub_categoria = $id_sub_categoria;
     }
 
     public function getNomeProduto()

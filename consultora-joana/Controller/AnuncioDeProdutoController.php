@@ -37,7 +37,14 @@ class AnuncioDeProdutoController
 
         $anuncioDeProduto->setNomeProduto($_POST['nome_produto']);
         $anuncioDeProduto->setDescProduto($_POST['desc_produto']);
+        $anuncioDeProduto->setIdSubCategoria($_POST['id_sub_categoria']);
         $foto = $_FILES['foto'];
+
+        if (empty($_POST['id_sub_categoria'])) {
+            echo retorno('Selecionne a sub-categoria');
+            header('Location: ../../private/administrador/produto/cadastro-produto.php?falhadeid=error');
+            exit;
+        }
 
         if (!isset($_FILES['foto'])) {
             echo retorno('Selecione uma imagem');

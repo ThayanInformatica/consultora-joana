@@ -79,3 +79,104 @@ function loadFoto(file, img){
         reader.readAsDataURL(file.files[0]);
     }
 }
+
+function reloadPage() {
+    window.location.reload();
+}
+
+function CarregarCategoriaPorIDMarca(id){
+
+    $.ajax({
+        type: "GET",
+        dataType: "json",
+         url: "../../../consultora-joana/Controller/MarcasController.php?id=" + id,
+        success:
+          function (categoria) {
+
+              document.getElementById("idCategorias").innerHTML = '';
+
+              for (var i=0;i< categoria.length; i++) { //vai passar por todos os objetos dentro do array
+                  var html = "<ul>";
+                  html +="<li><a style='cursor: pointer; !important; background: transparent !important;' id='pegariD' onclick='MudarBackGroundDoClick(this);CarregarSubCategoriaPorIDCategoria("+categoria[i].id_categoria+");'>"+categoria[i].nome_categoria+"" +
+                      "<input required type='hidden' id='categoria' value="+categoria[i].id_categoria+"></a></li>";
+                  html +="</ul>";
+                  $('#idCategorias').append(html);
+
+              }
+          }
+    })
+};
+
+function CarregarSubCategoriaPorIDCategoria(id){
+
+    $.ajax({
+        type: "GET",
+        dataType: "json",
+        url: "../../../consultora-joana/Controller/MarcasController.php?id_sub_cat=" + id,
+        success:
+            function (sub_categoria) {
+
+                document.getElementById("idSUBCategorias").innerHTML = '';
+
+                for (var i=0;i< sub_categoria.length; i++) { //vai passar por todos os objetos dentro do array
+                    var html = "<ul>";
+                    html +="<li><a style='cursor: pointer; !important; background: transparent !important;' id='pegariDSubCat' onclick='MudarBackGroundDoClickSubCat(this);pegarValorDeSubCat("+sub_categoria[i].id_sub_categoria+");'>"+sub_categoria[i].nome_sub_categoria+"" +
+                        "<input type='hidden' name='id_sub_categoria' id='categoria' required value="+sub_categoria[i].id_sub_categoria+"></a></li>";
+                    html +="</ul>";
+                    $('#idSUBCategorias').append(html);
+
+                }
+            }
+    })
+};
+
+function pegarValorDeSubCat(id) {
+
+    var html2 = "<input type='hidden' name='id_sub_categoria' id='id_sub_categoria' required value="+id+" >";
+
+    $('#idCategorias').append(html2);
+
+
+};
+
+var controle = 0;
+var controle1 = 0;
+var controle2 = 0;
+
+
+function MudarBackGroundDoClick(el) {
+
+    if(controle ==0){
+        document.getElementById(el.style.background = "blue");
+        controle++;
+    }
+    else{
+        document.getElementById(el.style.background = "transparent");
+        controle--;
+    }
+}
+
+function MudarBackGroundDoClickSubCat(el) {
+
+    if(controle1 ==0){
+        document.getElementById(el.style.background = "blue");
+        controle1++;
+    }
+    else{
+        document.getElementById(el.style.background = "transparent");
+        controle1--;
+    }
+}
+
+function MudarBackGroundDoClickMarcas(el) {
+
+    if(controle2 ==0){
+        document.getElementById(el.style.background = "blue");
+        controle2++;
+    }
+    else{
+        document.getElementById(el.style.background = "transparent");
+        controle2--;
+    }
+}
+

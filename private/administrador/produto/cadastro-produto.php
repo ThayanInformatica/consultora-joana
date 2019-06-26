@@ -47,9 +47,9 @@ session_start();
     </div>
 
     <p>Nome do Produto: </p>
-    <input type="text" name="nome_produto"/>
+    <input type="text" name="nome_produto" required/>
     <p>Descrição do Produto:</p>
-    <input type="text" name="desc_produto"/>
+    <input type="text" name="desc_produto" required/>
     <br>
     <br>
 
@@ -61,8 +61,64 @@ session_start();
             </a>
         </div>
         <div class="form-group">
-            <input type="file" name="foto" id="foto" value="foto"  onchange="loadFoto()">
+            <input type="file" name="foto" id="foto" value="foto" onchange="loadFoto()" required>
         </div>
+    </div>
+
+    <div>
+        <label>
+            Marcas
+        </label>
+        <ul>
+            <?php
+            include_once '../../../consultora-joana/Controller/MarcasController.php';
+            $marca = new MarcasController();
+            $marcas = $marca->listarTodasAsMarcas();
+
+            foreach($marcas as $row){
+            ?>
+            <li>
+                <a class="idMarcas" style="cursor: pointer; background: transparent !important;" onclick="CarregarCategoriaPorIDMarca(<?php echo $row['id_marca']; ?>); MudarBackGroundDoClickMarcas(this);">
+                <?php echo $row['nome_marca'];
+                ?>
+                </a>
+            </li>
+            <?php             }
+            ?>
+        </ul>
+
+    </div>
+
+    <div>
+        <label>
+            Categorias
+        </label>
+        <ul id="idCategorias">
+                <li>
+                    <a class="idCategorias" style="cursor: pointer; !important;">
+                        <input type="hidden" id="categoria" required>
+                    </a>
+                </li>
+        </ul>
+
+    </div>
+    <?php
+    if (isset($_GET['falhadeid'])) {
+        echo '<div class="alert alert-danger">Você precisa escolher uma sub-categoria deste produto</div>';
+    }
+    ?>
+    <div>
+        <label>
+            Sub-Categorias
+        </label>
+        <ul id="idSUBCategorias">
+            <li>
+                <a class="idSubCategorias" name="id_sub_categoria" style="cursor: pointer; !important;">
+                    <input type="hidden" name="id_sub_categoria" id="categoria" required>
+                </a>
+            </li>
+        </ul>
+
     </div>
 
     <a>
