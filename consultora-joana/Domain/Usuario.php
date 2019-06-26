@@ -26,9 +26,9 @@
 		    settype($nome,"string");
 		    $this->nome = $nome;
         }
-		public function getLogin(){
-			return $this->login;
-		}
+//		public function getLogin(){
+//			return $this->login;
+//		}
 
 		public function setLogin($login){
 			settype($login, "string");

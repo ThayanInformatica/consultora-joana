@@ -41,14 +41,13 @@
 
             try {
 
-                $sql = 'INSERT INTO tb_usuario (login,nome,senha,cpf,email) values (:login, :nome,
+                $sql = 'INSERT INTO tb_usuario (nome,senha,cpf,email) values (:nome,
  :senha, :cpf, :email);';
                 $this->pdoCon = new PdoCon();
                 $this->conexao = $this->pdoCon->getInstance();
                 $stm = $this->conexao->prepare($sql);
 
                 $stm->bindValue(':nome', $usuario->getNome(), PDO::PARAM_STR);
-                $stm->bindValue(':login', $usuario->getLogin(), PDO::PARAM_STR);
                 $stm->bindValue(':senha', $usuario->getSenha(), PDO::PARAM_STR);
                 $stm->bindValue(':cpf', $usuario->getCpf(), PDO::PARAM_STR);
                 $stm->bindValue(':email', $usuario->getEmail(), PDO::PARAM_STR);
@@ -135,6 +134,38 @@
 
         }
 
+        public  function  validaEmail($usuario){
+            try{
+                $sql = 'SELECT * FROM tb_usuario WHERE email = :email';
+                $this->pdoCon = new PdoCon();
+                $this->conexao = $this->pdoCon->getInstance();
+                $stm = $this->conexao->prepare($sql);
+
+                $stm->bindValue(':email', $usuario->getEmail(), PDO::PARAM_STR);
+
+
+                $this->conexao->beginTransaction();
+                $stm->execute();
+                $result = $stm->fetchColumn();
+                $this->conexao->commit();
+
+                if ($result > 0) {
+                    return false;
+                } else {
+                    return true;
+                }
+
+            }catch(PDOException $e){
+                if(stripos($e->getMessage(), 'DATABASE IS LOCKED' !== false)){
+                    $this->conexao->commit();
+                    usleep(250000);
+                }else{
+                    $this->conexao->rollBack();
+                    throw $e;
+                }
+            }
+        }
+
 
         public function salvarEndereco($endereco){
 
@@ -175,6 +206,10 @@
 
 
         }
+
+
+
+
 //
 //
 //

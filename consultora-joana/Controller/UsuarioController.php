@@ -96,7 +96,9 @@ class UsuarioController
 
               $cpfok =  $usuarioRepository->ValidarCpf($usuario);
 
-                if($cpfok == true ){
+              $recebeEmail = $usuarioRepository->validaEmail($usuario);
+
+                if($cpfok == true && $recebeEmail == true){
                  $id = $usuarioRepository->CadastrarUsuario($usuario);
 
                 if (!empty($endereco->getCep())) {
@@ -105,14 +107,18 @@ class UsuarioController
                 }
                 }
 
-                if($cpfok == true ){
+                if($cpfok == true && $recebeEmail == true){
                     header('Location: ../../index.php');
                 }
 
             }
         }
 
-        if($cpfok == false){
+        if($cpfok == true && $recebeEmail == false){
+            header('Location: ../../cadastro-usuario/cadastrar.php?Emailerro=invalido');
+        }
+
+        if($cpfok == false && $recebeEmail == true){
             header('Location: ../../cadastro-usuario/cadastrar.php?erro=cpfinvalido');
         }
 
@@ -126,7 +132,6 @@ class UsuarioController
 
         $usuario = new Usuario();
 
-        $usuario->setLogin($_POST['login']);
         $usuario->setNome($_POST['nome']);
         $usuario->setSenha($_POST['senha']);
         $usuario->setRepeteSenha($_POST['repetiSenha']);

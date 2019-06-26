@@ -1,4 +1,4 @@
-function _cpf(cpf) {
+function valid_cpf(cpf) {
     cpf = cpf.replace(/[^\d]+/g, '');
     if (cpf == '') return false;
     if (cpf.length != 11 ||
@@ -33,12 +33,16 @@ function _cpf(cpf) {
 }
 
 function validarCPF(el) {
-    if (!_cpf(el.value)) {
+    if (!valid_cpf(el.value)) {
 
-        alert("CPF inválido! " + el.value);
+        document.getElementById("cpf").className = 'is-invalid form-control'
 
         // apaga o valor
         el.value = "";
+    }
+    if (valid_cpf(el.value)) {
+
+        document.getElementById("cpf").className = 'is-valid form-control'
     }
 }
 
@@ -123,10 +127,52 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function(){
+    document.getElementById("campos-endereco").style.display = 'none';
+});
+
 function AbrirEndereco(el) {
     var display = document.getElementById(el).style.display;
     if(display == "none")
-        document.getElementById(el).style.display = 'block';
+        document.getElementById(el).style.display = 'flex';
     else
         document.getElementById(el).style.display = 'none';
 }
+
+
+function validarSenha() {
+
+   var validarSenha = document.getElementById("senhaPegarClass").className;
+
+    if (validarSenha == "is-invalid form-control") {
+        document.getElementById("senhaPegarClass").className = 'is-valid form-control';
+    }
+}
+
+
+
+function validarSenhaErepeteSenha() {
+
+    var senha =  document.getElementById("senhaPegarClass").value;
+    var Repsenha =  document.getElementById("rep_senha").value;
+
+    if(senha == Repsenha){
+        document.getElementById("rep_senha").className = 'is-valid form-control'
+    }else{
+        document.getElementById("rep_senha").className = 'is-invalid form-control'
+
+    }
+
+}
+
+function validarEmail() {
+
+    var validarEmail = document.getElementById("email").className;
+
+    if (validarEmail == "is-invalid form-control") {
+        document.getElementById("email").className = 'is-valid form-control';
+    }
+}
+
+
+
