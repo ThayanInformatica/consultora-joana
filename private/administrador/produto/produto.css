@@ -42,3 +42,29 @@ canvas{
 .aparecer-background {
 background: transparent
 }
+
+.aAlinha {
+    width: 100%;
+    margin:0px auto;
+}
+
+.aAlinha label{
+     display: inline-grid;
+    margin-right: 8px;
+    text-decoration: underline #0069d9;
+    font-weight: bold;
+    width: 500px !important;
+ }
+
+.aAlinha ul {
+     width:130px;
+     margin:0;
+     padding:0;
+     display:inline-grid;
+     list-style-type: none;
+ }
+
+.aAlinha li {
+    width: 200px;
+}
+

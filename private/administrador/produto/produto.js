@@ -80,6 +80,20 @@ function loadFoto(file, img){
     }
 }
 
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#blah')
+                .attr('src', e.target.result)
+                .width(180)
+                .height(auto);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
 function reloadPage() {
     window.location.reload();
 }
@@ -96,7 +110,7 @@ function CarregarCategoriaPorIDMarca(id){
               document.getElementById("idCategorias").innerHTML = '';
 
               for (var i=0;i< categoria.length; i++) { //vai passar por todos os objetos dentro do array
-                  var html = "<ul>";
+                 var html = "<ul>";
                   html +="<li><a style='cursor: pointer; !important; background: transparent !important;' id='pegariD' onclick='MudarBackGroundDoClick(this);CarregarSubCategoriaPorIDCategoria("+categoria[i].id_categoria+");'>"+categoria[i].nome_categoria+"" +
                       "<input required type='hidden' id='categoria' value="+categoria[i].id_categoria+"></a></li>";
                   html +="</ul>";
@@ -147,11 +161,18 @@ var controle2 = 0;
 function MudarBackGroundDoClick(el) {
 
     if(controle ==0){
-        document.getElementById(el.style.background = "blue");
+        document.getElementById(el.style.background = "#0069d9");
+        document.getElementById(el.style.color = "#ffffff");
+        document.getElementById(el.style.borderRadius = "8px");
+        document.getElementById(el.style.paddingTop = "2px");
+        document.getElementById(el.style.paddingBottom = "4px");
+        document.getElementById(el.style.paddingRight = "10px");
+        document.getElementById(el.style.paddingLeft = "10px");
         controle++;
     }
     else{
         document.getElementById(el.style.background = "transparent");
+        document.getElementById(el.style.color = "black");
         controle--;
     }
 }
@@ -159,11 +180,18 @@ function MudarBackGroundDoClick(el) {
 function MudarBackGroundDoClickSubCat(el) {
 
     if(controle1 ==0){
-        document.getElementById(el.style.background = "blue");
+        document.getElementById(el.style.background = "#0069d9");
+        document.getElementById(el.style.color = "#ffffff");
+        document.getElementById(el.style.borderRadius = "8px");
+        document.getElementById(el.style.paddingTop = "2px");
+        document.getElementById(el.style.paddingBottom = "4px");
+        document.getElementById(el.style.paddingRight = "10px");
+        document.getElementById(el.style.paddingLeft = "10px");
         controle1++;
     }
     else{
         document.getElementById(el.style.background = "transparent");
+        document.getElementById(el.style.color = "black");
         controle1--;
     }
 }
@@ -171,11 +199,18 @@ function MudarBackGroundDoClickSubCat(el) {
 function MudarBackGroundDoClickMarcas(el) {
 
     if(controle2 ==0){
-        document.getElementById(el.style.background = "blue");
+        document.getElementById(el.style.background = "#0069d9");
+        document.getElementById(el.style.color = "#ffffff");
+        document.getElementById(el.style.borderRadius = "8px");
+        document.getElementById(el.style.paddingTop = "2px");
+        document.getElementById(el.style.paddingBottom = "4px");
+        document.getElementById(el.style.paddingRight = "10px");
+        document.getElementById(el.style.paddingLeft = "10px");
         controle2++;
     }
     else{
         document.getElementById(el.style.background = "transparent");
+        document.getElementById(el.style.color = "black");
         controle2--;
     }
 }
