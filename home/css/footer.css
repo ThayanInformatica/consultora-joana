@@ -1,0 +1,17 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#contact {
+    width: 33px;
+}
+
+.devs {
+    font-size: 15px;
+}
+
+.footer {
+    background-color: mediumslateblue;
+    margin-right: 0px;
+    margin-left: 0px;
+}

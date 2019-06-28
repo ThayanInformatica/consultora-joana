@@ -1,0 +1,22 @@
+.slide-size {
+    width: 100%;
+}
+
+.product {
+    border: none;
+}
+
+.price {
+    color: green;
+}
+
+#hot-tab {
+    font-size: 50px;
+}
+
+@media (max-width: 575.98px) {
+
+	#hot-tab{
+        font-size: 30px;
+    }
+}

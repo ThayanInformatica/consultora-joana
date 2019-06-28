@@ -1,13 +1,9 @@
-1- Logo temporaria ate a criação de uma nova.
+1- A logo do facebook ta feia eu sei, em breve vai mudar.
 
 2- Imagens do slider tambem são temporarias.
 
-3- Modal de cadastro localizado no icone de usuario na barra de navegação (canto superior direito).
-
-4- Cores do sistema, ainda estão sendo escolhidas por isso podem mudar.
-
-5- Site ainda não está responsivo. 
+3- Modal de login localizado no icone de usuario na barra de navegação (canto superior direito).
 
 6- Caso tenha alguma sugestão, me avise :D (Jhuan)
 
-(Data da anotação: 24/06/2019)
+(Data da anotação: 28/06/2019)
