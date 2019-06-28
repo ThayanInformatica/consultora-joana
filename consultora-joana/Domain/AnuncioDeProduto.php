@@ -7,6 +7,9 @@ class AnuncioDeProduto
     private $id_sub_categoria;
     private $nome_produto;
     private $desc_produto;
+    private $preco;
+    private $promocao;
+
 
     public function getIdProduto()
     {
@@ -51,6 +54,30 @@ class AnuncioDeProduto
     {
         settype($desc_produto, "string");
         $this->desc_produto = $desc_produto;
+    }
+
+    public function getPreco()
+    {
+        return $this->preco;
+    }
+
+
+    public function setPreco($preco)
+    {
+        settype($preco, "string");
+        $this->preco = $preco;
+    }
+
+    public function getPromocao()
+    {
+        return $this->promocao;
+    }
+
+
+    public function setPromocao($promocao)
+    {
+        settype($promocao, "string");
+        $this->promocao = $promocao;
     }
 }
 

@@ -215,3 +215,24 @@ function MudarBackGroundDoClickMarcas(el) {
     }
 }
 
+function somenteNumeros(obj, e) {
+    var tecla = (window.event) ? e.keyCode : e.which;
+    if (tecla == 8 || tecla == 0)
+        return true;
+    if (tecla != 44 && tecla != 46 && tecla < 48 || tecla > 57)
+        return false;
+}
+
+function alteraPonto(valorInput) {
+    $(valorInput).val(valorInput.val().replace(".", ","));
+}
+
+function AbrirPromoçao(el) {
+    var display = document.getElementById(el).style.display;
+    if(display == "none")
+        document.getElementById(el).style.display = 'block';
+    else
+        document.getElementById(el).style.display = 'none';
+}
+
+

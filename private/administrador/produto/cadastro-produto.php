@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 ?>
 
 <!DOCTYPE html>
@@ -123,6 +124,27 @@ session_start();
                 </div>
             </div>
 
+            <div class="col-md-3">
+                <label style="font-weight: 700;">
+                    Preço
+                </label>
+                <input pattern="[0-9]+([,\.][0-9]+)?" onkeypress="return somenteNumeros( this , event ) ;" onchange="alteraPonto($(this));" placeholder="R$" class="form-control" type="text" name="preco" size="10"/>
+            </div>
+            <br>
+
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-success" type="button" onclick="AbrirPromoçao('campos-promo')">
+                    Adicionar Promoção
+                </button>
+            </div >
+
+            <div id="campos-promo" class="col-md-8 mb-3" style="display: none;">
+                <label style="font-weight: 700;">
+                    Promoção
+                </label>
+                <input placeholder="De 2,50R$ por 1,50R$" class="form-control" type="text" name="promocao" size="30"/>
+            </div>
+            <br>
             <a>
                 <button id="salvar" class="btn btn-primary" type="submit" data-loading-text="Salvando...">
                     Cadastrar

@@ -6,7 +6,7 @@
 		private $conexao;
 		public function CadastrarProduto($anuncioDeProduto){
 			try{
-				$sql = 'INSERT INTO tb_produto (nome_produto, desc_produto, id_sub_categoria) VALUES (:nome_produto, :desc_produto, :id_sub_categoria)';
+				$sql = 'INSERT INTO tb_produto (nome_produto, desc_produto, preco, promocao, id_sub_categoria) VALUES (:nome_produto, :desc_produto, :preco, :promocao, :id_sub_categoria)';
 				$this->pdoCon = new PdoCon();
 				$this->conexao = $this->pdoCon->getInstance();
 				$stm = $this->conexao->prepare($sql);
@@ -14,6 +14,9 @@
                 $stm->bindValue(':nome_produto', $anuncioDeProduto->getNomeProduto(), PDO::PARAM_STR);
 				$stm->bindValue(':desc_produto', $anuncioDeProduto->getDescProduto(), PDO::PARAM_STR);
                 $stm->bindValue(':id_sub_categoria', $anuncioDeProduto->getIdSubCategoria(), PDO::PARAM_INT);
+                $stm->bindValue(':id_sub_categoria', $anuncioDeProduto->getIdSubCategoria(), PDO::PARAM_INT);
+                $stm->bindValue(':preco', $anuncioDeProduto->getPreco(), PDO::PARAM_INT);
+                $stm->bindValue(':promocao', $anuncioDeProduto->getPromocao(), PDO::PARAM_INT);
 
 
                 $this->conexao->beginTransaction();

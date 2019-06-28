@@ -13,6 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['method'] == 'Login') {
     echo 'Metodo incorreto';
 }
 
+//echo md5('id_usuario: 25'); gerador de Token
+
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['method'] == 'cadastrar'){
     $metoCadastrar = $_POST['method'];
     if(method_exists('UsuarioController', $metoCadastrar)) {

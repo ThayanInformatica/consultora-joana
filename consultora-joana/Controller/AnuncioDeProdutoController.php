@@ -38,6 +38,9 @@ class AnuncioDeProdutoController
         $anuncioDeProduto->setNomeProduto($_POST['nome_produto']);
         $anuncioDeProduto->setDescProduto($_POST['desc_produto']);
         $anuncioDeProduto->setIdSubCategoria($_POST['id_sub_categoria']);
+        $anuncioDeProduto->setPromocao($_POST['promocao']);
+        $anuncioDeProduto->setPreco($_POST['preco']);
+
         $foto = $_FILES['foto'];
 
         if (empty($_POST['id_sub_categoria'])) {
